@@ -1,0 +1,38 @@
+/////  Binary Search Tree:   /////
+
+a.Left Subtree Nodes < Root
+b.Right Subtree Nodes > Root
+c.Each Node has at most two children (Left Child and Right Child)
+d.Left & Right Subtree are also BST with no duplicates.
+
+
+Strategy:
+Most problems will be solved using recursion i.e.
+by dividing into subproblems & making recursive calls on subtree.
+
+1. Inorder Traversal of BST gives a SORTED sequence.
+2. Delete a Node:
+   a.Case 1: Delete leaf Node
+   b.Case 2: Delete Node with one child
+   c.Case 3: Delete Node with two children
+            - Replace value with inorder successor
+            - Delete the node for inorder successor
+            - Inorder successor always has 0 or 1 child
+   d.Case 4: Delete a Root Node
+
+
+
+
+
+
+
+
+
+
+
+
+Question Solved:
+1.Introduction
+2.Concept of Search in BST  --File: BSTSearch.java
+3.Build BST  --File: BuildaBST.java
+4.Delete a Node --File: DeleteANode.java

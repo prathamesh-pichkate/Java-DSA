@@ -1,0 +1,49 @@
+HEAPS DATA STRUCTURE:
+
+1.What is a Heap?
+  A heap is a specialized tree-based data structure that satisfies the heap property. It is essentially a complete binary tree, meaning all levels are fully filled except possibly for the last level, which is filled from left to right.
+
+2.There are two types of heaps:
+  *Min-Heap: The value of each node is greater than or equal to the value of its parent, with the minimum value at the root.
+
+  *Max-Heap: The value of each node is less than or equal to the value of its parent, with the maximum value at the root. 
+
+3. Priority Queue:
+    
+   import java.util.PriorityQueue;
+
+   // Ascending Order:
+   PriorityQueue<Integer> pq = new PriorityQueue<>();
+   Ex: 1,2,3
+   File: PQAscending.java
+
+   //Descending Order:
+   PriorityQueue<Integer> pq = new PriorityQueue<>(Comparator.reverseOrder());
+   Ex:3,2,1
+   File: PQDescending.java
+
+4.Operation on PriorityQueue :
+   a.add() - O(log n)
+   b.peek() - O(1)
+   c.remove() - 0(log n)
+
+5.How class Objects are compared:
+  File: ObjectsCompared.java
+   
+  Introduction:
+  In Java, comparing objects is a common task, particularly when sorting collections or implementing data structures like heaps and priority queues. Object comparison allows Java to determine the ordering of objects based on specified criteria. There are two main interfaces used for comparing objects in Java: "Comparable" and "Comparator".
+
+  Comparable Interface:
+  The Comparable interface is used to define the natural ordering of objects. It is implemented by the class whose instances need to be compared.
+  Method: compareTo(Student s2)
+
+  Comparator Interface:
+  The Comparator interface is used to define an external comparison strategy. It is particularly useful when the natural ordering is not sufficient or when we need multiple ways to compare objects.
+  Method: compare(Student s2,Student s3)
+
+
+
+
+
+   
+   

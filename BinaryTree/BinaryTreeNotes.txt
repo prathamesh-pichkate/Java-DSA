@@ -1,0 +1,23 @@
+1. offer():
+    Purpose: Inserts an element into the priority queue or heap.
+    Similar to: add()
+    Behavior:
+    In a priority queue, offer() adds the element according to the queue's ordering rules.
+    Returns true if the element was added successfully, and false if the queue's capacity is limited and cannot accept more elements.
+
+
+2. poll():
+    Purpose: Retrieves and removes the head (the smallest or highest-priority element) of the priority queue or heap.
+    Similar to: remove()
+    Behavior:
+    Removes the head of the queue and returns it.
+    Returns null if the queue is empty.
+
+Key Differences:
+
+    offer() vs. add():
+    offer() is generally used in queues with fixed capacities, where it gracefully handles full queues by returning false.
+    add() throws an exception if it can't add the element due to capacity constraints.
+    
+    poll() vs. remove():
+    poll() returns null if the queue is empty, while remove() throws an exception.
