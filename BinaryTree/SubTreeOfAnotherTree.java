@@ -14,11 +14,20 @@ public class SubTreeOfAnotherTree {
     public static boolean isIdentical(Node root, Node subroot) {
         if (root == null && subroot == null) {
             return true;
-        } else if (root == null || subroot == null || root.data != subroot.data) {
+        } 
+        else if (root == null || subroot == null || root.data != subroot.data) {
             return false;
         }
 
-        return isIdentical(root.left, subroot.left) && isIdentical(root.right, subroot.right);
+        if (!isIdentical(root.left, subroot.left)) {
+            return false;
+        }
+
+        if (!isIdentical(root.right, subroot.right)) {
+            return false;
+        }
+
+        return true;
     }
 
     public static boolean isSubtree(Node root, Node subroot) {
@@ -32,7 +41,10 @@ public class SubTreeOfAnotherTree {
             }
         }
 
-        return isSubtree(root.left, subroot) || isSubtree(root.right, subroot);
+        boolean leftAns = isSubtree(root.left, subroot);
+        boolean rightAns = isSubtree(root.right, subroot);
+
+        return leftAns || rightAns;
     }
 
     public static void main(String[] args) {
@@ -56,3 +68,9 @@ public class SubTreeOfAnotherTree {
         System.out.println("Is subroot a subtree of root? " + result);
     }
 }
+
+
+/// Condition to check if it was identical or not:
+///    1. Check for the null value if any of the node is null return false,if both nodes are null return true.
+///    2. If both values are not identical then its not identical
+///    3. Check in the left and right subtree for identical values.
