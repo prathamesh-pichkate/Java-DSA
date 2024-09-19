@@ -65,7 +65,7 @@ public class DeleteANode{
         root.right.right = new Node(6);
 
         inorder(root);
-        System.out.println(delete(root, 3));
+        System.out.println(delete(root, 2));
         inorder(root);
     }
 }
