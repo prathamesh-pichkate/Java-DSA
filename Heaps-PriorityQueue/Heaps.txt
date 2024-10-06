@@ -1,0 +1,38 @@
+///////////////// Priority-Queue: ///////////////
+
+A PriorityQueue is a data structure that retrieves elements based on their priority. By default, elements with the lowest value (highest priority) are processed first, but this can be customized using a comparator.
+
+Operations:
+1. add() - O(logn)
+2. remove() - O(logn)
+3. peek() - O(1)
+4. isEmpty() - O(1)
+
+
+//////////////////  Objects in Priority Queue /////////////////////
+
+For Ex:Take refrence from ObjectsInPQ.java file.
+
+When we want to store objects (not just primitive data types like integers or strings) in a PriorityQueue, we need a way to define how the objects are compared. This is necessary because the PriorityQueue needs to know which object has higher priority.
+
+To achieve this, we use the Comparable interface and implement the compareTo() method to define the comparison logic.
+
+The class implements the Comparable<Student> interface, which requires us to define how to compare two Student objects.
+
+
+
+//////////////////// Heaps //////////////////////
+
+1. Binary tree: At most 2 children
+2. Complete Binary Tree : BT which is level vise completely filled    except last one,and is filled from left to right.
+3. Heap Order property:
+     Children >= Parent (minheaps)
+     Children <= Parent (maxheaps)
+
+
+4. Heaps are not implemented using the class but array and arraylist is used to implements.
+
+5. Parent child relation:
+   root = idx = i
+   left child = 2*i + 1
+   right child = 2*i + 2
