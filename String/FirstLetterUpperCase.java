@@ -40,7 +40,7 @@ public class FirstLetterUpperCase{
     
     public static void main(String[] args) {
         String str = "i am prathamesh pichkate";
-        // System.out.println(upperCase(str));
-        System.out.println(upperCaseBuilder(str));
+        System.out.println(upperCase(str));
+      //   System.out.println(upperCaseBuilder(str));
     }
 }

@@ -38,7 +38,7 @@ public class PairsInArray {
                 int sum=0;
                 for(int k=start;k<=end;k++){
                     System.out.print(arr[k]+" ");
-                     sum +=arr[k];
+                    sum +=arr[k];
                 }
                 max=Math.max(sum,max);
                 System.out.println();
@@ -111,6 +111,6 @@ public class PairsInArray {
         // printSubarraysMax(arr);
         prefixSum(arr);
         // prefixSum2(arr);
-         kadansAlgo(arr);
+        //  kadansAlgo(arr);
     }
 }
