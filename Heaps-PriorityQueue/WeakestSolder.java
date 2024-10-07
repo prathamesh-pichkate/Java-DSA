@@ -18,6 +18,7 @@ public class WeakestSolder {
             }
         }
     }
+    
     public static void main(String[] args) {
         int soldier[][] = {{1,0,0,0},
                            {1,1,1,1},

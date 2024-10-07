@@ -28,9 +28,7 @@ public class InsertInHeap {
 
         /// Peek operation:
         public int peek() { // O(1)
-            if (arr.isEmpty()) {
-                throw new NoSuchElementException("Heap is empty");
-            }
+            
             return arr.get(0);
         }
 
