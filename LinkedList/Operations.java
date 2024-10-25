@@ -383,8 +383,9 @@ public class Operations {
         ll.print();
         ll.addMiddle(55, 1);
         ll.print();
-        ll.addMiddle(44, 4);
+        ll.addMiddle(414, 4);
         ll.print();
+       
 
         // System.out.println("The size of the linked list is :"+ ll.size());
 
@@ -412,6 +413,7 @@ public class Operations {
             
         // ll.removeCycle();
 
-        System.out.println(ll.merge(head));
+        // System.out.println(ll.merge(head));
+        
     }
 }
