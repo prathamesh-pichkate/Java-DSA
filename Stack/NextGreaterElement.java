@@ -1,3 +1,6 @@
+
+//Related to next greater element
+
 import java.util.Stack;
 
 public class NextGreaterElement{
@@ -7,7 +10,7 @@ public class NextGreaterElement{
        
         for(int i = n-1;i>=0;i--){
            int currVal = arr[i]; 
-           while(!s.isEmpty() && arr[s.peek()] <= arr[i]){
+           while(!s.isEmpty() && arr[s.peek()] <= currVal){
                s.pop();
            }
 

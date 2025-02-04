@@ -1,4 +1,5 @@
-import java.util.*;
+// import java.util.*;
+import java.util.ArrayList;
 public class ImplementUsingArrayList{
      static class ExplicitStack{
         static ArrayList<Integer> list = new ArrayList<Integer>();
@@ -26,15 +27,30 @@ public class ImplementUsingArrayList{
         }
      }
     public static void main(String[] args) {
-        Stack s = new Stack();
-        s.push(1);
-        s.push(2);
-        s.push(3);
-        s.push(4);
-        s.push(5);
-        System.out.println(s);
-        System.out.println(s.peek());
-        System.out.println(s.pop());
-        System.out.println(s);
+
+      //step1:
+
+      // ExplicitStack.push(1);
+      // ExplicitStack.push(2);
+      // ExplicitStack.push(3);
+      // ExplicitStack.push(4);
+      // ExplicitStack.push(5);
+      // System.out.println("Stack: " + ExplicitStack.list);
+      // System.out.println("Top element: " + ExplicitStack.peek());
+      // System.out.println("Popped element: " + ExplicitStack.pop());
+      // System.out.println("Stack after pop: " + ExplicitStack.list);
+      
+
+      // step 2
+      ExplicitStack s = new ExplicitStack();
+      s.push(1);
+      s.push(2);
+      s.push(3);
+      s.push(4);
+      s.push(5);
+      System.out.println("Stack: " + s.list);
+      System.out.println("Top element: " + s.peek());
+      System.out.println("Popped element: " + s.pop());
+      System.out.println("Stack after pop: " + s.list);
     }
 }

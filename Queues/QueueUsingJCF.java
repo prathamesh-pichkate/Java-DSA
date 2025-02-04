@@ -3,7 +3,8 @@
 import java.util.*;
 public class QueueUsingJCF {
     public static void main(String[] args) {
-        // As Queue is the Interface so we can't create the object of it , so we can use the array and linked list.
+        // As Queue is the Interface so we can't create the object of it , 
+        // so we can use the array and linked list.
         Queue<Integer> q = new LinkedList<>(); 
         q.add(1);
         q.add(2);
